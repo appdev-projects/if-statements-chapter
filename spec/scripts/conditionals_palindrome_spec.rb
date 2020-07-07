@@ -35,7 +35,7 @@ describe "conditionals_palindrome.rb" do
 end
 
 describe "conditionals_palindrome.rb" do
-  it "should output 'false' given the input 'racecar'", points: 1 do
+  it "should output 'true' given the input 'racecar'", points: 1 do
     # Un-require conditionals_palindrome.rb
     conditionals_palindrome = $".select{|r| r.include? 'conditionals_palindrome.rb'}
     $".delete(conditionals_palindrome.first)
