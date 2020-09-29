@@ -43,3 +43,23 @@ Complete input and output example:
 hannah
 true
 ```
+
+## Specs
+<details>
+  <summary>Click here to see names of each test</summary>
+
+conditionals_rps.rb should output 'You lose!' given the input 'paper' 
+
+conditionals_palindrome.rb should output 'true' given the input 'HanNah' 
+
+conditionals_palindrome.rb should output 'false' given the input 'candy' 
+
+conditionals_palindrome.rb should output 'false' given the input 'racecars' 
+
+conditionals_palindrome.rb should output 'true' given the input 'racecar' 
+
+conditionals_rps.rb should output 'You won!' given the input 'rock' 
+
+conditionals_rps.rb should output 'You tied!' given the input 'scissors' 
+
+</details>
