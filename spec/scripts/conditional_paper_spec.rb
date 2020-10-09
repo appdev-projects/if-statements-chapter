@@ -1,5 +1,5 @@
 describe "conditionals_rps.rb" do
-  it "should output 'You lose!' given the input 'paper'", points: 1 do
+  it "should output 'You lost!' given the input 'paper'", points: 1 do
     # Un-require conditionals_rps.rb
     conditionals_rps = $".select{|r| r.include? 'conditionals_rps.rb'}
     $".delete(conditionals_rps.first)
