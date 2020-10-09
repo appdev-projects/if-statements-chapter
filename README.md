@@ -48,7 +48,7 @@ true
 <details>
   <summary>Click here to see names of each test</summary>
 
-conditionals_rps.rb should output 'You lose!' given the input 'paper' 
+conditionals_rps.rb should output 'You lost!' given the input 'paper' 
 
 conditionals_palindrome.rb should output 'true' given the input 'HanNah' 
 
