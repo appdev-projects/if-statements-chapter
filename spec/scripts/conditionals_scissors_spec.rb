@@ -5,7 +5,7 @@ describe "conditionals_rps.rb" do
     $".delete(conditionals_rps.first)
 
     allow_any_instance_of(Object).to receive(:gets).and_return("scissors")
-    response = /.Please choose rock, paper, or scissors:.\n.You played scissors!.\n.The computer played scissors!.\n.You tied.*/
+    response = /.?Please choose rock, paper, or scissors:.?\n.?You played scissors!.?\n.?The computer played scissors!.?\n.?You tied.?/
     expect { require_relative '../../conditionals_rps' }.to output(response).to_stdout
   end
 end
