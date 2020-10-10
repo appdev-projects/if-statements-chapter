@@ -4,7 +4,7 @@ describe "conditionals_palindrome.rb" do
     conditionals_palindrome = $".select{|r| r.include? 'conditionals_palindrome.rb'}
     $".delete(conditionals_palindrome.first)
 
-    allow_any_instance_of(Object).to receive(:gets).and_return("HanNah")
+    allow_any_instance_of(Object).to receive(:gets).and_return("HanNah\n")
     response = /true/
     expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
   end
@@ -16,7 +16,7 @@ describe "conditionals_palindrome.rb" do
     conditionals_palindrome = $".select{|r| r.include? 'conditionals_palindrome.rb'}
     $".delete(conditionals_palindrome.first)
 
-    allow_any_instance_of(Object).to receive(:gets).and_return("candy")
+    allow_any_instance_of(Object).to receive(:gets).and_return("candy\n")
     response = /false/
     expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
   end
@@ -28,7 +28,7 @@ describe "conditionals_palindrome.rb" do
     conditionals_palindrome = $".select{|r| r.include? 'conditionals_palindrome.rb'}
     $".delete(conditionals_palindrome.first)
 
-    allow_any_instance_of(Object).to receive(:gets).and_return("racecars")
+    allow_any_instance_of(Object).to receive(:gets).and_return("racecars\n")
     response = /false/
     expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
   end
@@ -40,7 +40,7 @@ describe "conditionals_palindrome.rb" do
     conditionals_palindrome = $".select{|r| r.include? 'conditionals_palindrome.rb'}
     $".delete(conditionals_palindrome.first)
 
-    allow_any_instance_of(Object).to receive(:gets).and_return("racecar")
+    allow_any_instance_of(Object).to receive(:gets).and_return("racecar\n")
     response = /true/
     expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
   end
