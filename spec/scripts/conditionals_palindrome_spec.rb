@@ -5,8 +5,13 @@ describe "conditionals_palindrome.rb" do
     $".delete(conditionals_palindrome.first)
 
     allow_any_instance_of(Object).to receive(:gets).and_return("HanNah\n")
-    response = /true/
-    expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
+    response = /true/i
+    # expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
+
+    output = with_captured_stdout { require_relative('../../conditionals_palindrome')} 
+    output = "empty" if output.empty? 
+    expect(output.match?(response)).to be(true),
+      "Expected output to be '#{response}', but was #{output}."
   end
 end
 
@@ -17,8 +22,13 @@ describe "conditionals_palindrome.rb" do
     $".delete(conditionals_palindrome.first)
 
     allow_any_instance_of(Object).to receive(:gets).and_return("candy\n")
-    response = /false/
-    expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
+    response = /false/i
+    # expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
+
+    output = with_captured_stdout { require_relative('../../conditionals_palindrome')} 
+    output = "empty" if output.empty? 
+    expect(output.match?(response)).to be(true),
+      "Expected output to be '#{response}', but was #{output}."
   end
 end
 
@@ -29,8 +39,13 @@ describe "conditionals_palindrome.rb" do
     $".delete(conditionals_palindrome.first)
 
     allow_any_instance_of(Object).to receive(:gets).and_return("racecars\n")
-    response = /false/
-    expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
+    response = /false/i
+    # expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
+
+    output = with_captured_stdout { require_relative('../../conditionals_palindrome')} 
+    output = "empty" if output.empty? 
+    expect(output.match?(response)).to be(true),
+      "Expected output to be '#{response}', but was #{output}."
   end
 end
 
@@ -41,7 +56,21 @@ describe "conditionals_palindrome.rb" do
     $".delete(conditionals_palindrome.first)
 
     allow_any_instance_of(Object).to receive(:gets).and_return("racecar\n")
-    response = /true/
-    expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
+    response = /true/i
+    # expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
+
+    output = with_captured_stdout { require_relative('../../conditionals_palindrome')} 
+    output = "empty" if output.empty? 
+    expect(output.match?(response)).to be(true),
+      "Expected output to be '#{response}', but was #{output}."
   end
+end
+
+def with_captured_stdout
+  original_stdout = $stdout  # capture previous value of $stdout
+  $stdout = StringIO.new     # assign a string buffer to $stdout
+  yield                      # perform the body of the user code
+  $stdout.string             # return the contents of the string buffer
+ensure
+  $stdout = original_stdout  # restore $stdout to its previous value
 end
