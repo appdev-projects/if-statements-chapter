@@ -6,12 +6,11 @@ describe "conditionals_palindrome.rb" do
 
     allow_any_instance_of(Object).to receive(:gets).and_return("HanNah\n")
     response = /true/i
-    # expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
 
     output = with_captured_stdout { require_relative('../../conditionals_palindrome')} 
     output = "empty" if output.empty? 
     expect(output.match?(response)).to be(true),
-      "Expected output to be '#{response}', but was #{output}."
+      "Expected output to be 'Enter one word\\ntrue', but was #{output}."
   end
 end
 
@@ -28,7 +27,7 @@ describe "conditionals_palindrome.rb" do
     output = with_captured_stdout { require_relative('../../conditionals_palindrome')} 
     output = "empty" if output.empty? 
     expect(output.match?(response)).to be(true),
-      "Expected output to be '#{response}', but was #{output}."
+      "Expected output to be 'Enter one word\\nfalse', but was #{output}."
   end
 end
 
@@ -40,12 +39,11 @@ describe "conditionals_palindrome.rb" do
 
     allow_any_instance_of(Object).to receive(:gets).and_return("racecars\n")
     response = /false/i
-    # expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
 
     output = with_captured_stdout { require_relative('../../conditionals_palindrome')} 
     output = "empty" if output.empty? 
     expect(output.match?(response)).to be(true),
-      "Expected output to be '#{response}', but was #{output}."
+      "Expected output to be 'Enter one word\\nfalse', but was #{output}."
   end
 end
 
@@ -57,12 +55,11 @@ describe "conditionals_palindrome.rb" do
 
     allow_any_instance_of(Object).to receive(:gets).and_return("racecar\n")
     response = /true/i
-    # expect { require_relative '../../conditionals_palindrome' }.to output(response).to_stdout
 
     output = with_captured_stdout { require_relative('../../conditionals_palindrome')} 
     output = "empty" if output.empty? 
     expect(output.match?(response)).to be(true),
-      "Expected output to be '#{response}', but was #{output}."
+      "Expected output to be 'Enter one word\\ntrue', but was #{output}."
   end
 end
 

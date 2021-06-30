@@ -6,12 +6,11 @@ describe "conditionals_rps.rb" do
 
     allow_any_instance_of(Object).to receive(:gets).and_return("paper")
     response = /.?Please choose rock, paper, or scissors:.?\n.?You played paper!.?\n.?The computer played scissors!.?\n.?You lost!.?\n/i
-    # expect { require_relative '../../conditionals_rps' }.to output(response).to_stdout
 
-    output = with_captured_stdout { require_relative('../../conditionals_palindrome')} 
+    output = with_captured_stdout { require_relative('../../conditionals_rps')} 
     output = "empty" if output.empty? 
     expect(output.match?(response)).to be(true),
-      "Expected output to be '#{response}', but was #{output}."
+      "Expected output to be 'Please choose rock, paper, or scissors:\\nYou played paper!\\nThe computer played scissors!\\nYou lost!', but was #{output}."
   end
 end
 
