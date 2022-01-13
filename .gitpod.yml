@@ -1,4 +1,4 @@
-image: XXXXXXXXXX
+image: patrickmckernin/ifchapter22
 
 tasks:
   - init: bin/setup
