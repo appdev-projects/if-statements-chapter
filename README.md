@@ -1,48 +1,19 @@
 # Ruby Practice
 
-Run your Ruby file by typing `ruby ` and then the name of the file you want to run in the Terminal.
+ 1. Open a file (e.g. `conditionals_rps.rb`) in the editor window.
+ 1. Modify the file per the instructions on top.
+ 1. Run your Ruby file by typing `ruby ` and then the name of the file you want to run in the terminal. If we want to run `conditionals_rps.rb`, we can write the command:
 
-If we want to run `conditionals_rps.rb`, we can write the command:
+      ```bash
+      ruby conditionals_rps.rb
+      ```
+   
+      Remember, if there are multiple files with similar names, start typing the name and then just press <kbd>Tab</kbd> on your keyboard to let the terminal complete the name. You rarely need to type full filenames out — use **tab completion**!
 
-```bash
-ruby conditionals_rps.rb
-```
+1. To re-run this command, you can use the <kbd>Up ↑</kbd> and <kbd>Down ↓</kbd> arrow keys to look at the history of commands you've run in a terminal.
+1. When you think you have the required output, run `rails grade` and proceed when the test passes without errors.
 
-To re-run this command, you can use the UP and DOWN arrow keys to look at the history of commands you've run in a Terminal.
-
-## Conditionals
-
-### conditionals_rps.rb
-
-Write a program that:
-
-Asks the player to input rock, paper, or scissors.
-Based on what the player chose, prints "You played rock!" or "You played paper!" or "You played scissors!"
-The computer is pretty dumb in this version of our game; it always plays scissors. Print "The computer played scissors!"
-Based on what the player chose, prints "You won!" or "You lost!" or "You tied!"
-If you need a refresher on the rules of Rock, Paper, Scissors: https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors
-
-
-### conditionals_palindrome.rb
-
-Ask for a word, check if it is a palindrome, and display true if it is one and false if it isn't.
-
-A word is a palindrome if it reads the same backwards as forwards, e.g. "madam".
-
-Remember to display the actual value true or false, not the strings containing the letters "true" or "false".
-
-Input:
-`hannah`
-
-Key output:
-`true`
-
-Complete input and output example:
-```bash
-"Enter one word"
-hannah
-true
-```
+If you are struggling, **try to experiment directly in the IRB environment** by typing `irb` into the terminal and pressing enter. This will start an interactive Ruby terminal, where you can enter individual lines of Ruby to see their output. If you start `irb` then the terminal will no longer be in the `bash` environment so things like `rails grade` won't work. You will need to open a second terminal with the plus (+) icon and switch between the `irb` and `bash` terminals as needed. Alternatively type `exit` at the IRB terminal prompt to return to the `bash` environment.
 
 ## Specs
 <details>
