@@ -1,5 +1,5 @@
 # Write a program that:
-
+#
 # Asks the player to input rock, paper, or scissors.
 # Based on what the player chose, prints:
 #
@@ -20,7 +20,12 @@
 p "Please choose rock, paper, or scissors:"
 
 
-##~~~~~~~~~~~~~~~~
-# conditionals_rps.rb should output 'You won!' given the input 'rock' 
-
-# conditionals_rps.rb should output 'You tied!' given the input 'scissors' 
+# ~~~~~ Specs (make it do these things) ~~~~~
+#
+# rps.rb should output 'You lost!' given the input 'paper' 
+#
+# rps.rb should output 'You won!' given the input 'rock' 
+#
+# rps.rb should output 'You tied!' given the input 'scissors' 
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

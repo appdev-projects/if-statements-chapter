@@ -19,3 +19,16 @@
 #   true
 
 p "Enter one word"
+
+
+# ~~~~~ Specs (make it do these things) ~~~~~
+#
+# palindrome.rb should output 'true' given the input 'HanNah' 
+#
+# palindrome.rb should output 'false' given the input 'candy' 
+#
+# palindrome.rb should output 'false' given the input 'racecars' 
+#
+# palindrome.rb should output 'true' given the input 'racecar' 
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
