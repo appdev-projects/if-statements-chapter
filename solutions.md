@@ -1,6 +1,6 @@
 # Solutions
 
-# rps.rb
+## rps.rb
 
 ```ruby
 player_move = gets.chomp
@@ -20,7 +20,7 @@ else
 end
 ```
 
-# palindrome.rb
+## palindrome.rb
 
 ```ruby
 word = gets.chomp.downcase
