@@ -18,3 +18,9 @@
 # https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors
 
 p "Please choose rock, paper, or scissors:"
+
+
+##~~~~~~~~~~~~~~~~
+# conditionals_rps.rb should output 'You won!' given the input 'rock' 
+
+# conditionals_rps.rb should output 'You tied!' given the input 'scissors' 
