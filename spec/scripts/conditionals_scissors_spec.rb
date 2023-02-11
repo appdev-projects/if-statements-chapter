@@ -1,13 +1,13 @@
-describe "conditionals_rps.rb" do
+describe "rps.rb" do
   it "should output 'You tied!' given the input 'scissors'", points: 1 do
-    # Un-require conditionals_rps.rb
-    conditionals_rps = $".select{|r| r.include? 'conditionals_rps.rb'}
-    $".delete(conditionals_rps.first)
+    # Un-require rps.rb
+    rps = $".select{|r| r.include? 'rps.rb'}
+    $".delete(rps.first)
 
     allow_any_instance_of(Object).to receive(:gets).and_return("scissors")
     response = /.?Please choose rock, paper, or scissors:.?\n.?You played scissors!.?\n.?The computer played scissors!.?\n.?You tied.?/i
 
-    output = with_captured_stdout { require_relative('../../conditionals_rps')} 
+    output = with_captured_stdout { require_relative('../../rps')} 
     output = "empty" if output.empty? 
     expect(output.match?(response)).to be(true),
       "Expected output to be 'Please choose rock, paper, or scissors:\\nYou played scissors!\\nThe computer played scissors!\\nYou tied', but was #{output}."
